@@ -56,4 +56,14 @@ document.addEventListener('scroll', e => {
     }
 });
 
-// AOS.init();
+// const section = document.getElementById('projects');
+// const realHeight = section.getBoundingClientRect().height;
+// section.style.height = realHeight + "px";
+// section.style.transition = "height 250ms ease-in-out";
+// section.style.overflow = "hidden";
+// let isOpen = true;
+// document.getElementById("btn").addEventListener("click", btn => {
+//     isOpen = !isOpen;
+//     section.style.height = (isOpen * realHeight) + "px";
+//     btn.target.innerHTML = isOpen ? "Close" : "Expand";
+// });

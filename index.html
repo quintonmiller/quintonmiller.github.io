@@ -10,7 +10,6 @@
           crossorigin="anonymous" />
     <link rel='stylesheet'
           href='styles.css'>
-<!--    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
 </head>
 <body>
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
@@ -42,11 +41,12 @@
     <section class="hero is-info is-fullheight is-bold">
         <div class="hero-body">
             <div class="container has-text-centered">
+                <img src="https://via.placeholder.com/300" alt="picture of me" class="hero-image">
                 <p class="title">
                     Hi, I'm Quinton Miller.
                 </p>
                 <p class="subtitle">
-                    I'm a Software Developer currently building customer-facing web applications for <a href='https://sayinsurance.com' class='has-text-weight-semibold'>Say Insurance</a> using Angular.
+                    I am a Software Engineer currently building customer-facing web applications for <a href='https://sayinsurance.com' class='has-text-weight-semibold has-underline' target="_blank">Say Insurance</a> using Angular.
                 </p>
                 <a href='#about' class='has-text-white'>
                     <span class='icon is-large pulse'><i class='fas fa-chevron-down fa-2x'></i></span>
@@ -57,14 +57,38 @@
     <section id='about' class='section has-background-light'>
         <div class='container'>
             <div class='columns'>
-                <div class='column'>
+                <div class='column content'>
                     <h1 class='title'>About</h1>
-                    <p>Test test test test test</p>
+                    <p>
+                        I began programming and building websites when I was in middle school and have not stopped since
+                        then. I am passionate about modern web technologies and solving complex problems through programming.
+                        My friends and colleagues know me as a meticulous coder who can work quickly without cutting
+                        corners. I try to have a wide and deep understanding of programming topics, which means I'm always
+                        up for learning something new. However, I don't spend all of my time programming; I also enjoy
+                        traveling, attending Counter-Strike tournaments, and attempting to cook.
+                    </p>
+                    <p>
+                        Since 2016, I have been working at <a href="https://sayinsurance.com" target="_blank" class="has-text-weight-semibold has-underline">Say Insurance</a>.
+                        Say is an online auto insurance company created by Shelter Insurance. At Say, I primarily work on the Frontend side by architecting and building web applications. To
+                        accomplish this, we use modern web technologies and methodologies such as Angular, Amazon Web Services,
+                        and Agile Software Development. Because Say is a pretty small operation, I have been lucky as a
+                        new developer to be able to propose and lead some large projects. Some projects that I have lead
+                        include: Say Design System, Say Web Components, and rebuilding the Say End-to-End tests.
+                    </p>
                 </div>
                 <div class='column'>
                     <div class='card'>
-                        <div class='card-content'>
-                            Hi
+                        <header class="card-header">
+                            <p class="card-header-title is-centered">Education</p>
+                        </header>
+                        <div class='card-content has-text-centered'>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/University_of_Missouri_logo.svg" alt="University of Missouri logo" class="school-logo">
+                            <p>
+                                University of Missouri - Columbia<br>
+                                Class of 2017<br>
+                                Bachelor of Science in Computer Science<br>
+                                Minor in Mathematics
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -72,13 +96,78 @@
         </div>
     </section>
     <section id='skills' class='section has-background-primary'>
-        <div class='container'>
+        <div class='container content'>
             <h1 class='title'>Skills</h1>
+
+            <ul>
+                <li><strong>Web Libraries:</strong> Angular, angularJS, Stencil, Craft CMS, Jekyll, RxJS, Express</li>
+                <li><strong>Programming Languages:</strong> JavaScript (ES5, ES6+), TypeScript, PHP, Node, CSS, HTML, SASS / SCSS, SQL, JSX / TSX</li>
+                <li><strong>Methodologies:</strong> Agile, Test Driven Development, Continuous Integration / Delivery, Kanban, Design Systems, A/B Testing, BEM</li>
+                <li><strong>Build Tools:</strong> Gulp, Angular CLI, Git, NPM, Jenkins, Babel, Webpack</li>
+                <li><strong>Testing Tools:</strong> Protractor, Karma, Jest, Jasmine, Selenium</li>
+                <li><strong>Other:</strong> Google Lighthouse, Microsoft Excel, Google Analytics, SessionCam</li>
+            </ul>
         </div>
     </section>
     <section id='projects' class='section has-background-light'>
-        <div class='container'>
+        <div class='container content'>
             <h1 class='title'>Projects</h1>
+
+            <div class="app-project">
+                <div class="columns">
+                    <div class="column is-8">
+                        <h2 class="title is-5">Say Insurance - Quote Frontend</h2>
+
+                        <p>
+                            <strong>Dates:</strong> 2017 - Now<br>
+                            <strong>Technologies:</strong> Angular 8, PHP, AWS, Yii 2, TypeScript, SCSS, Protractor, Karma<br>
+
+                            <strong>Description:</strong> Quote Frontend is the web application for the acquisition side of Say that guides the user
+                            through getting a quote and purchasing a policy. Because Quote Frontend is how Say
+                            sells policies, we highly value performance, user experience, and SEO to maximize our conversion
+                            rates.<br>
+                            <strong>Accomplishments:</strong>
+                        </p>
+                        <ul>
+                            <li>Ported older angularJS code to Angular 2</li>
+                            <li>Built an End-to-End Page Object library to handle the long and complex flows
+                            required to test our application</li>
+                            <li>Built a custom server-side rendering solution for our key entry pages to maximize performance</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <img src="https://via.placeholder.com/600x400" alt="Say quote frontend" class="app-project__image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-project">
+                <div class="columns">
+                    <div class="column">
+                        <img src="https://via.placeholder.com/600x400" alt="Say quote frontend" class="app-project__image">
+                    </div>
+                    <div class="column is-8">
+                        <h2 class="title is-5">Say Insurance - Home Office Frontend</h2>
+
+                        <p>
+                            <strong>Dates:</strong> 2016 - 2017<br>
+                            <strong>Technologies:</strong> angularJS (1.6), ES6, RxJS, Babel, SCSS, Karma<br>
+
+                            <strong>Description:</strong> Home Office Frontend is the application that is used by the
+                            customer service representatives at Say. This is the project that I started working on when I
+                            joined Say. Because this was an internal application, our primary focus was on adding functionality
+                            and fixing bugs.<br>
+                            <strong>Accomplishments:</strong>
+                        </p>
+                        <ul>
+                            <li>Built a queueing solution to handle sending multiple changes when saving changes</li>
+                            <li>Refactored application to be more component-based to simplify future conversion to Angular</li>
+                            <li>Built a "differ" to compare a policy at different times</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
     <section id='contact' class='section has-background-info has-text-centered has-text-white'>
@@ -96,7 +185,7 @@
                     </span>
                     <span>Email</span>
                 </a>
-                <a class="button is-light is-medium" href='#'>
+                <a class="button is-light is-medium" href='https://www.linkedin.com/in/quinton-miller/' target="_blank">
                     <span class="icon is-small">
                       <i class="fab fa-linkedin"></i>
                     </span>
@@ -107,7 +196,6 @@
     </section>
 
     <script src="https://kit.fontawesome.com/9e1d688b2d.js"></script>
-<!--    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
     <script src='script.js'></script>
 </body>
 </html>

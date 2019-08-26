@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.has-underline {
+    text-decoration: underline;
+}
+
 .pulse {
     animation: pulse 2s infinite;
 }
@@ -19,4 +23,25 @@ html {
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0);
     }
+}
+
+.hero-image {
+
+    border-radius: 100%;
+    width: 300px;
+    max-width: 50%;
+    border: 5px solid white;
+    margin-bottom: 10px;
+}
+
+.school-logo {
+    width: 100px;
+}
+
+.app-project {
+    margin-bottom: 25px;
+}
+
+.app-project__image {
+    border: 3px solid white;
 }
