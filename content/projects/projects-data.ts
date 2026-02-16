@@ -1,0 +1,56 @@
+import { Project } from '@/lib/types';
+
+export const projects: Project[] = [
+  {
+    id: '1',
+    title: 'E-Commerce Platform',
+    description: 'A full-stack e-commerce platform built with React, Node.js, and PostgreSQL. Features include user authentication, product catalog, shopping cart, and payment integration.',
+    technologies: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Stripe'],
+    githubUrl: 'https://github.com/[username]/ecommerce-platform',
+    liveUrl: 'https://example-ecommerce.com',
+    imageUrl: 'https://placehold.co/600x400/2563eb/ffffff?text=E-Commerce+Platform',
+  },
+  {
+    id: '2',
+    title: 'Task Management App',
+    description: 'A collaborative task management application with real-time updates using WebSockets. Includes drag-and-drop functionality, team collaboration features, and analytics dashboard.',
+    technologies: ['Next.js', 'TypeScript', 'Socket.io', 'MongoDB', 'Tailwind CSS'],
+    githubUrl: 'https://github.com/[username]/task-manager',
+    liveUrl: 'https://example-tasks.com',
+    imageUrl: 'https://placehold.co/600x400/059669/ffffff?text=Task+Manager',
+  },
+  {
+    id: '3',
+    title: 'Weather Dashboard',
+    description: 'A responsive weather dashboard that displays current weather conditions and forecasts using third-party weather APIs. Features location search, favorites, and detailed weather metrics.',
+    technologies: ['React', 'TypeScript', 'OpenWeather API', 'Chart.js', 'CSS Modules'],
+    githubUrl: 'https://github.com/[username]/weather-dashboard',
+    liveUrl: 'https://example-weather.com',
+    imageUrl: 'https://placehold.co/600x400/0ea5e9/ffffff?text=Weather+Dashboard',
+  },
+  {
+    id: '4',
+    title: 'Portfolio Generator',
+    description: 'A tool that helps developers create beautiful portfolio websites with customizable templates. Users can input their information and generate a static site instantly.',
+    technologies: ['Next.js', 'TypeScript', 'MDX', 'Vercel'],
+    githubUrl: 'https://github.com/[username]/portfolio-generator',
+    imageUrl: 'https://placehold.co/600x400/8b5cf6/ffffff?text=Portfolio+Generator',
+  },
+  {
+    id: '5',
+    title: 'Code Snippet Manager',
+    description: 'An application for developers to save, organize, and share code snippets. Features syntax highlighting, tagging system, and search functionality.',
+    technologies: ['React', 'TypeScript', 'Firebase', 'Prism.js'],
+    githubUrl: 'https://github.com/[username]/snippet-manager',
+    liveUrl: 'https://example-snippets.com',
+    imageUrl: 'https://placehold.co/600x400/ec4899/ffffff?text=Snippet+Manager',
+  },
+  {
+    id: '6',
+    title: 'Fitness Tracker',
+    description: 'A mobile-responsive fitness tracking application that allows users to log workouts, track progress, and visualize their fitness journey with charts and statistics.',
+    technologies: ['React Native', 'TypeScript', 'Express', 'MongoDB'],
+    githubUrl: 'https://github.com/[username]/fitness-tracker',
+    imageUrl: 'https://placehold.co/600x400/f59e0b/ffffff?text=Fitness+Tracker',
+  },
+];
