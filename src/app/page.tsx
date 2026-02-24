@@ -16,7 +16,8 @@ export default function Home() {
           Hi, I'm <span className={styles.highlight}>Quinton Miller</span>
         </h1>
         <p className={styles.subtitle}>
-          Senior Front-End Engineer at Amazon with 10+ years of experience building high-scale web applications. I specialize in React, TypeScript, and performance-critical UI systems.
+          I&apos;m a front-end engineer based in Seattle with over a decade of experience building high-scale web applications.
+          My background spans UI systems, application architecture, and developer tooling.
         </p>
         <div className={styles.ctas}>
           <Link href="/work" className={styles.primaryBtn}>
@@ -33,18 +34,21 @@ export default function Home() {
         <div className={styles.nowItems}>
           <div className={styles.nowItem}>
             <span className={styles.pulse} />
-            Leading front-end development on Amazon Brand Stores
+            Crafting advertiser tools & AI features at <Link href="/work/amazon-brand-stores">Amazon Brand Stores</Link>
           </div>
           <div className={styles.nowItem}>
             <span className={styles.pulse} />
-            Writing about web performance &amp; accessibility
+            Designing AI-native products &amp; intelligent systems
           </div>
         </div>
       </section>
 
       <section className={styles.about}>
         <p className={styles.aboutText}>
-          I&apos;m a front-end engineer at Amazon in Seattle with over a decade of experience shipping software at scale. I care about making the web fast, accessible, and honest. I studied CS at Mizzou and have spent most of my career building products that serve millions of users. The best interfaces disappear &mdash; they let people do what they came to do without getting in the way.
+          Over the past six years at Amazon, I&apos;ve contributed to products operating at significant scale, where performance, stability, and maintainability are fundamental constraints. My work has supported large-scale advertiser and customer experiences.
+          <br />
+          <br />
+          Alongside my work at Amazon, I design and develop independent AI-centric products and frameworks. These projects explore AI-native systems, human-in-the-loop workflows, agent architectures, and productivity tooling.
         </p>
       </section>
 
