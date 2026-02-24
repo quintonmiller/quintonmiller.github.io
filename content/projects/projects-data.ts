@@ -14,6 +14,18 @@ export const projects: Project[] = [
     story: 'LLMs are powerful but imperfect — they hallucinate, miss context, and make mistakes. I built ProposeFlow to solve this by adding a human checkpoint between AI generation and your database. Developers define a schema, users type plain English, and the system proposes a structured object for review. If rejected, AI regenerates based on the feedback. The result is AI-generated content that users can actually trust.',
   },
   {
+    id: '11',
+    slug: 'tailored-ai',
+    title: 'Tailored AI',
+    description: 'A lightweight, modular AI agent framework designed for local LLMs. Supports hot-reloadable tools, providers, and config — the agent can update its own capabilities without restarting. Runs as an interactive CLI, Discord bot, or HTTP service with a React web UI, and supports sub-agent delegation, cron scheduling, and a built-in knowledge base.',
+    technologies: ['TypeScript', 'Node.js', 'React', 'SQLite', 'Hono', 'Vite', 'Ollama', 'Playwright'],
+    liveUrl: 'https://quinton.dev/tailored-ai/',
+    liveUrlText: 'Learn More',
+    imageUrl: 'https://placehold.co/600x400/7c3aed/ffffff?text=Tailored+AI',
+    featured: true,
+    story: 'Most AI agent frameworks are designed for fast cloud APIs. I built this one for a different constraint: local 30B parameter models on consumer hardware. That meant keeping system prompts concise, tool counts low, and context tight. The agent supports hot-reloading its tools and config at runtime, can run as a Discord bot or cron scheduler, spawn async sub-agents for parallel work, and modify its own capabilities mid-conversation — all without an API bill.',
+  },
+  {
     id: '8',
     slug: 'habitu',
     title: 'Habitu',
