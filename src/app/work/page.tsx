@@ -5,7 +5,7 @@ import styles from './page.module.css';
 import { ViewTransition } from 'react';
 
 export const metadata = {
-  title: 'Work - Quinton Miller',
+  title: 'Work',
   description: 'Software work by Quinton Miller — from Amazon-scale e-commerce to AI-powered tools',
 };
 

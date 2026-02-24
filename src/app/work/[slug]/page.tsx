@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   return {
-    title: `${project.title} - Quinton Miller`,
+    title: project.title,
     description: project.description,
   };
 }

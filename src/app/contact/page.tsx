@@ -1,7 +1,7 @@
 import styles from './page.module.css';
 
 export const metadata = {
-  title: 'Contact - Quinton Miller',
+  title: 'Contact',
   description: 'Get in touch with Quinton Miller',
 };
 

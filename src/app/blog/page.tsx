@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 
 export const metadata = {
-  title: 'Blog - Quinton Miller',
+  title: 'Blog',
   description: 'Articles on front-end architecture, performance, and building software at scale',
 };
 
