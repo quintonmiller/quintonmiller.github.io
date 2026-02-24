@@ -15,7 +15,7 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.content}>
           <p className={styles.copyright}>
-            &copy; {currentYear} Quinton Miller. Built with Next.js
+            &copy; {currentYear} Quinton Miller
           </p>
 
           <div className={styles.social}>
