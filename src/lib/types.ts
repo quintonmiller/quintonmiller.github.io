@@ -10,12 +10,16 @@ export interface BlogPost {
 
 export interface Project {
   id: string;
+  slug: string;
   title: string;
   description: string;
   technologies: string[];
   githubUrl?: string;
   liveUrl?: string;
+  liveUrlText?: string;
   imageUrl?: string;
+  featured?: boolean;
+  story?: string;
 }
 
 export interface ContactFormData {

@@ -85,6 +85,7 @@ export default function BlogSearch({ posts, allTags }: BlogSearchProps) {
                     month: 'long',
                     day: 'numeric',
                   })}
+                  {post.readingTime && ` · ${post.readingTime}`}
                 </p>
                 <p className={styles.postDescription}>{post.description}</p>
                 <div className={styles.postTags}>

@@ -71,6 +71,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               day: 'numeric',
             })}
           </time>
+          {post.readingTime && (
+            <span className={styles.readingTime}>{post.readingTime}</span>
+          )}
           {post.tags.length > 0 && (
             <div className={styles.tags}>
               {post.tags.map((tag) => (

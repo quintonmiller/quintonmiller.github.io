@@ -32,7 +32,12 @@
   gap: var(--space-lg);
   flex-wrap: wrap;
   color: var(--color-text-secondary);
+  font-family: var(--font-mono);
   font-size: var(--text-sm);
+}
+
+.readingTime {
+  color: var(--color-text-secondary);
 }
 
 .tags {
@@ -44,6 +49,7 @@
 .tag {
   background: var(--color-code-bg);
   color: var(--color-text-secondary);
+  font-family: var(--font-mono);
   padding: var(--space-xs) var(--space-sm);
   border-radius: var(--radius-sm);
   font-size: var(--text-xs);

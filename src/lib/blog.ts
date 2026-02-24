@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import readingTime from 'reading-time';
 import { BlogPost } from './types';
 
 const contentDirectory = path.join(process.cwd(), 'content/blog');
@@ -17,7 +18,7 @@ export function getAllBlogPosts(): BlogPost[] {
       const slug = fileName.replace(/\.mdx$/, '');
       const fullPath = path.join(contentDirectory, fileName);
       const fileContents = fs.readFileSync(fullPath, 'utf8');
-      const { data } = matter(fileContents);
+      const { data, content } = matter(fileContents);
 
       return {
         slug,
@@ -25,6 +26,7 @@ export function getAllBlogPosts(): BlogPost[] {
         date: data.date || '',
         description: data.description || '',
         tags: data.tags || [],
+        readingTime: readingTime(content).text,
       };
     });
 
@@ -44,6 +46,7 @@ export function getBlogPostBySlug(slug: string): BlogPost | null {
       description: data.description || '',
       tags: data.tags || [],
       content,
+      readingTime: readingTime(content).text,
     };
   } catch (error) {
     return null;

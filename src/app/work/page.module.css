@@ -87,10 +87,18 @@
 .tag {
   background: var(--color-code-bg);
   color: var(--color-text-secondary);
+  font-family: var(--font-mono);
   padding: var(--space-xs) var(--space-md);
   border-radius: var(--radius-sm);
   font-size: var(--text-sm);
   font-weight: 500;
+  border-left: 3px solid var(--color-accent);
+  transition: all 0.2s ease;
+}
+
+.tag:hover {
+  background: var(--color-accent);
+  color: white;
 }
 
 .links {
@@ -118,7 +126,18 @@
 }
 
 .linkPrimary:hover {
-  color: #1d4ed8;
+  color: var(--color-accent-hover);
+}
+
+.linkDetail {
+  color: var(--color-accent);
+  font-weight: 600;
+  font-size: var(--text-sm);
+  transition: color 0.2s ease;
+}
+
+.linkDetail:hover {
+  color: var(--color-accent-hover);
 }
 
 @media (max-width: 768px) {

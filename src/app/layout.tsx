@@ -7,18 +7,19 @@ import { ViewTransitions } from 'next-view-transitions';
 import { ViewTransition } from "react";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://quinton.dev"),
   title: {
     default: "Quinton Miller - Front-End Engineer",
     template: "%s | Quinton Miller",
   },
-  description: "Personal website and blog of Quinton Miller, Front-End Engineer at Amazon. Explore projects, articles, and insights on web development.",
+  description: "Personal website and blog of Quinton Miller, Front-End Engineer at Amazon. Explore my work, articles, and insights on web development.",
   keywords: ["Quinton Miller", "Front-End Engineer", "Web Development", "React", "TypeScript", "Next.js", "Amazon"],
   authors: [{ name: "Quinton Miller" }],
   creator: "Quinton Miller",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://yoursite.com",
+    url: "https://quinton.dev",
     siteName: "Quinton Miller",
     title: "Quinton Miller - Front-End Engineer",
     description: "Personal website and blog of Quinton Miller, Front-End Engineer at Amazon",
@@ -35,7 +36,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Quinton Miller - Front-End Engineer",
     description: "Personal website and blog of Quinton Miller, Front-End Engineer at Amazon",
-    creator: "@[username]",
     images: ["/og-image.jpg"],
   },
   robots: {

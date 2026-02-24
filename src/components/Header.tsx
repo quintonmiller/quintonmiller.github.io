@@ -7,7 +7,7 @@ import { ViewTransition } from 'react';
 
 const navigation = [
   { name: 'About', href: '/' },
-  { name: 'Projects', href: '/projects' },
+  { name: 'Work', href: '/work' },
   { name: 'Blog', href: '/blog' },
   { name: 'Contact', href: '/contact' },
 ];

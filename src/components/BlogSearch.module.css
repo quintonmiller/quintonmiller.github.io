@@ -47,6 +47,7 @@
 .tag {
   background: var(--color-surface);
   color: var(--color-text-secondary);
+  font-family: var(--font-mono);
   padding: var(--space-sm) var(--space-md);
   border-radius: var(--radius-md);
   font-size: var(--text-sm);
@@ -111,6 +112,7 @@
 }
 
 .postMeta {
+  font-family: var(--font-mono);
   font-size: var(--text-sm);
   color: var(--color-text-secondary);
   margin-bottom: var(--space-md);
@@ -131,6 +133,7 @@
 .postTag {
   background: var(--color-code-bg);
   color: var(--color-text-secondary);
+  font-family: var(--font-mono);
   padding: var(--space-xs) var(--space-sm);
   border-radius: var(--radius-sm);
   font-size: var(--text-xs);

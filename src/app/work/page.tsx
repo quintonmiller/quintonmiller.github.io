@@ -1,21 +1,22 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { projects } from '@/../content/projects/projects-data';
 import styles from './page.module.css';
 import { ViewTransition } from 'react';
 
 export const metadata = {
-  title: 'Projects - Quinton Miller',
-  description: 'A showcase of my software development projects and work',
+  title: 'Work - Quinton Miller',
+  description: 'Software work by Quinton Miller — from Amazon-scale e-commerce to AI-powered tools',
 };
 
 export default function ProjectsPage() {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <h1>Projects</h1>
+        <h1>Work</h1>
         <p className={styles.subtitle}>
-          A selection of projects I've built, showcasing my skills in web development,
-          full-stack engineering, and problem-solving.
+          Side projects and professional work spanning full-stack web development,
+          AI-powered tools, and large-scale e-commerce systems.
         </p>
       </header>
 
@@ -51,6 +52,9 @@ export default function ProjectsPage() {
                 </div>
 
                 <div className={styles.links}>
+                  <Link href={`/work/${project.slug}`} className={styles.linkDetail}>
+                    View Details →
+                  </Link>
                   {project.githubUrl && (
                     <a
                       href={project.githubUrl}
@@ -68,7 +72,7 @@ export default function ProjectsPage() {
                       rel="noopener noreferrer"
                       className={styles.linkPrimary}
                     >
-                      Live Demo →
+                      {project.liveUrlText ?? 'Live Demo'} →
                     </a>
                   )}
                 </div>

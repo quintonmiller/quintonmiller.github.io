@@ -6,7 +6,7 @@ import Link from "next/link";
 import { ViewTransition } from "react";
 
 export default function Home() {
-  const featuredProjects = projects.slice(0, 3);
+  const featuredWork = projects.filter((p) => p.featured).slice(0, 3);
   const latestPosts = getAllBlogPosts().slice(0, 3);
 
   return (
@@ -16,11 +16,11 @@ export default function Home() {
           Hi, I'm <span className={styles.highlight}>Quinton Miller</span>
         </h1>
         <p className={styles.subtitle}>
-          Front-End Engineer II at Amazon, building delightful user experiences with React, TypeScript, and modern web technologies.
+          Senior Front-End Engineer at Amazon with 10+ years of experience building high-scale web applications. I specialize in React, TypeScript, and performance-critical UI systems.
         </p>
         <div className={styles.ctas}>
-          <Link href="/projects" className={styles.primaryBtn}>
-            View Projects
+          <Link href="/work" className={styles.primaryBtn}>
+            View Work
           </Link>
           <Link href="/blog" className={styles.secondaryBtn}>
             Read Blog
@@ -28,82 +28,59 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.about}>
-        <h2>About Me</h2>
-        <div className={styles.bioContent}>
-          <p>
-            I'm a Front-End Engineer based in Seattle, WA, currently working at Amazon.
-            I specialize in building scalable, performant web applications with a focus on
-            user experience and accessibility.
-          </p>
-          <p>
-            I graduated from the University of Missouri - Columbia with a Bachelor's of Science
-            in Computer Science and a minor in Mathematics. My journey in tech has been driven by
-            a passion for solving complex problems and creating intuitive interfaces that users love.
-          </p>
-          <p>
-            When I'm not coding, you can find me exploring new technologies, contributing to open
-            source projects, or writing about web development best practices on my blog.
-          </p>
-        </div>
-
-        <div className={styles.highlights}>
-          <div className={styles.highlightCard}>
-            <h3>Current Role</h3>
-            <p>Front-End Engineer II</p>
-            <p className={styles.company}>Amazon.com</p>
+      <section className={styles.now}>
+        <span className={styles.nowLabel}>Currently</span>
+        <div className={styles.nowItems}>
+          <div className={styles.nowItem}>
+            <span className={styles.pulse} />
+            Leading front-end development on Amazon Brand Stores
           </div>
-          <div className={styles.highlightCard}>
-            <h3>Location</h3>
-            <p>Seattle, WA</p>
-          </div>
-          <div className={styles.highlightCard}>
-            <h3>Education</h3>
-            <p>B.S. Computer Science</p>
-            <p className={styles.company}>University of Missouri</p>
+          <div className={styles.nowItem}>
+            <span className={styles.pulse} />
+            Writing about web performance &amp; accessibility
           </div>
         </div>
       </section>
 
+      <section className={styles.about}>
+        <p className={styles.aboutText}>
+          I&apos;m a front-end engineer at Amazon in Seattle with over a decade of experience shipping software at scale. I care about making the web fast, accessible, and honest. I studied CS at Mizzou and have spent most of my career building products that serve millions of users. The best interfaces disappear &mdash; they let people do what they came to do without getting in the way.
+        </p>
+      </section>
+
       <section className={styles.featured}>
         <div className={styles.sectionHeader}>
-          <h2>Featured Projects</h2>
-          <Link href="/projects" className={styles.viewAllLink}>
+          <h2>Selected Work</h2>
+          <Link href="/work" className={styles.viewAllLink}>
             View All →
           </Link>
         </div>
-        <div className={styles.projectsGrid}>
-          {featuredProjects.map((project) => (
-            <ViewTransition key={project.title} name={project.title}>
-              <article key={project.id} className={styles.projectCard}>
+        <div className={styles.workGrid}>
+          {featuredWork.map((project) => (
+            <article key={project.id} className={styles.workCard}>
+              <Link href={`/work/${project.slug}`} className={styles.workCardLink}>
                 {project.imageUrl && (
-                  <div className={styles.projectImageWrapper}>
+                  <div className={styles.workImageWrapper}>
                     <Image
                       src={project.imageUrl}
                       alt={project.title}
                       width={600}
                       height={400}
-                      className={styles.projectImage}
+                      className={styles.workImage}
                     />
                   </div>
                 )}
-                <div className={styles.projectContent}>
-                  <ViewTransition name={project.title + 'title'}>
-                    <h3 className={styles.projectTitle}>{project.title}</h3>
-                  </ViewTransition>
-                  <ViewTransition name={project.description + 'desc'}>
-                    <p className={styles.projectDescription}>{project.description}</p>
-                  </ViewTransition>
-                  <div className={styles.projectTags}>
-                    {project.technologies.slice(0, 3).map((tech) => (
-                      <span key={tech} className={styles.projectTag}>
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
+                <h3 className={styles.workTitle}>{project.title}</h3>
+                <p className={styles.workDescription}>{project.description}</p>
+                <div className={styles.workTags}>
+                  {project.technologies.slice(0, 4).map((tech) => (
+                    <span key={tech} className={styles.workTag}>
+                      {tech}
+                    </span>
+                  ))}
                 </div>
-              </article>
-            </ViewTransition>
+              </Link>
+            </article>
           ))}
         </div>
       </section>
@@ -119,13 +96,18 @@ export default function Home() {
           {latestPosts.map((post) => (
             <article key={post.slug} className={styles.blogCard}>
               <Link href={`/blog/${post.slug}`} className={styles.blogCardLink}>
-                <time className={styles.blogDate}>
-                  {new Date(post.date).toLocaleDateString('en-US', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric',
-                  })}
-                </time>
+                <div className={styles.blogMeta}>
+                  <time className={styles.blogDate}>
+                    {new Date(post.date).toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric',
+                    })}
+                  </time>
+                  {post.readingTime && (
+                    <span className={styles.blogReadingTime}>{post.readingTime}</span>
+                  )}
+                </div>
                 <ViewTransition name={post.slug}>
                   <h3
                     className={styles.blogTitle}

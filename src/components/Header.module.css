@@ -34,6 +34,7 @@
 
 .navLink {
   color: var(--color-text-secondary);
+  font-family: var(--font-mono);
   font-weight: 500;
   transition: color 0.2s ease;
   text-decoration: none;

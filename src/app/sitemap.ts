@@ -1,8 +1,10 @@
 import { MetadataRoute } from 'next';
 import { getAllBlogPosts } from '@/lib/blog';
 
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://yoursite.com'; // TODO: Update with your actual domain
+  const baseUrl = 'https://quinton.dev';
 
   // Get all blog posts
   const posts = getAllBlogPosts();
@@ -21,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${baseUrl}/projects`,
+      url: `${baseUrl}/work`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
