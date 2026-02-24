@@ -18,8 +18,8 @@ export default function ContactPage() {
       <div className={styles.content}>
         <div className={styles.card}>
           <h3>Email</h3>
-          <a href="mailto:email@example.com" className={styles.link}>
-            email@example.com
+          <a href="mailto:quintonmiller1993@gmail.com" className={styles.link}>
+            quintonmiller1993@gmail.com
           </a>
         </div>
 
@@ -27,7 +27,7 @@ export default function ContactPage() {
           <h3>Socials</h3>
           <div className={styles.socials}>
             <a
-              href="https://linkedin.com/in/[username]"
+              href="https://www.linkedin.com/in/quinton-miller/"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialLink}
@@ -35,7 +35,7 @@ export default function ContactPage() {
               LinkedIn
             </a>
             <a
-              href="https://github.com/[username]"
+              href="https://github.com/quintonmiller"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialLink}
@@ -43,7 +43,7 @@ export default function ContactPage() {
               GitHub
             </a>
             <a
-              href="https://bsky.app/profile/[username]"
+              href="https://bsky.app/profile/quinton.dev"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.socialLink}

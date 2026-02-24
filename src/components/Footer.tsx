@@ -2,9 +2,9 @@ import Link from 'next/link';
 import styles from './Footer.module.css';
 
 const socialLinks = [
-  { name: 'GitHub', href: 'https://github.com/[username]' },
-  { name: 'LinkedIn', href: 'https://linkedin.com/in/[username]' },
-  { name: 'Email', href: 'mailto:email@example.com' },
+  { name: 'GitHub', href: 'https://github.com/quintonmiller' },
+  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/quinton-miller/' },
+  { name: 'Email', href: 'mailto:quintonmiller1993@gmail.com' },
 ];
 
 export default function Footer() {
