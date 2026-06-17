@@ -22,8 +22,8 @@ export default function ProjectsPage() {
 
       <div className={styles.grid}>
         {projects.map((project) => (
-          <ViewTransition key={project.title} name={project.title}>
-            <article key={project.id} className={styles.card}>
+          <ViewTransition key={project.id} name={`work-${project.slug}`}>
+            <article className={styles.card}>
               {project.imageUrl && (
                 <div className={styles.imageWrapper}>
                   <Image
@@ -36,10 +36,10 @@ export default function ProjectsPage() {
                 </div>
               )}
               <div className={styles.cardContent}>
-                <ViewTransition name={project.title + 'title'}>
+                <ViewTransition name={`work-${project.slug}-title`}>
                   <h2 className={styles.cardTitle}>{project.title}</h2>
                 </ViewTransition>
-                <ViewTransition name={project.title + 'desc'}>
+                <ViewTransition name={`work-${project.slug}-desc`}>
                   <p className={styles.cardDescription}>{project.description}</p>
                 </ViewTransition>
 

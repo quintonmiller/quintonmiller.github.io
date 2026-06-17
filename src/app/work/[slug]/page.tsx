@@ -43,7 +43,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
           ← Back to Work
         </Link>
 
-        <ViewTransition name={project.title + 'title'}>
+        <ViewTransition name={`work-${project.slug}-title`}>
           <h1 className={styles.title}>{project.title}</h1>
         </ViewTransition>
 
