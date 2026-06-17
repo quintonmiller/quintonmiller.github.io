@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import ParticleNetwork from "@/components/ParticleNetwork";
-import { ViewTransitions } from 'next-view-transitions';
 import { ViewTransition } from "react";
 
 export const metadata: Metadata = {
@@ -60,7 +58,6 @@ export default function RootLayout({
     <html lang="en" style={{ colorScheme: 'light dark' }}>
       <ViewTransition>
         <body suppressHydrationWarning style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-          {/*<ParticleNetwork />*/}
           <Header />
           <main style={{ flex: 1 }}>
             {children}
