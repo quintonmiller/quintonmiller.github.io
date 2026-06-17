@@ -31,8 +31,9 @@ export default function BlogSearch({ posts, allTags }: BlogSearchProps) {
     <div>
       <div className={styles.searchBar}>
         <input
-          type="text"
+          type="search"
           placeholder="Search posts..."
+          aria-label="Search posts"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           className={styles.searchInput}
