@@ -16,8 +16,8 @@ export default function Home() {
           Hi, I'm <span className={styles.highlight}>Quinton Miller</span>
         </h1>
         <p className={styles.subtitle}>
-          I&apos;m a front-end engineer based in Seattle with over a decade of experience building high-scale web applications.
-          My background spans UI systems, application architecture, and developer tooling.
+          I&apos;m a full-stack engineer based in Seattle with over a decade of experience building high-scale web applications.
+          My background spans UI systems, full-stack architecture, and AI-native products.
         </p>
         <div className={styles.ctas}>
           <Link href="/work" className={styles.primaryBtn}>
@@ -45,7 +45,7 @@ export default function Home() {
 
       <section className={styles.about}>
         <p className={styles.aboutText}>
-          Over the past six years at Amazon, I&apos;ve contributed to products operating at significant scale, where performance, stability, and maintainability are fundamental constraints. My work has supported large-scale advertiser and customer experiences.
+          Since joining Amazon in 2019, I&apos;ve contributed to products operating at significant scale, where performance, stability, and maintainability are fundamental constraints. My work has supported large-scale advertiser and customer experiences.
           <br />
           <br />
           Alongside my work at Amazon, I design and develop independent AI-centric products and frameworks. These projects explore AI-native systems, human-in-the-loop workflows, agent architectures, and productivity tooling.

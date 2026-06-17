@@ -7,11 +7,11 @@ import { ViewTransition } from "react";
 export const metadata: Metadata = {
   metadataBase: new URL("https://quinton.dev"),
   title: {
-    default: "Quinton Miller - Front-End Engineer",
+    default: "Quinton Miller - Full-Stack Engineer",
     template: "%s | Quinton Miller",
   },
-  description: "Personal website and blog of Quinton Miller, Front-End Engineer at Amazon. Explore my work, articles, and insights on web development.",
-  keywords: ["Quinton Miller", "Front-End Engineer", "Web Development", "React", "TypeScript", "Next.js", "Amazon"],
+  description: "Personal website and blog of Quinton Miller, Full-Stack Engineer at Amazon. Explore my work, articles, and insights on web development.",
+  keywords: ["Quinton Miller", "Full-Stack Engineer", "Web Development", "React", "TypeScript", "Next.js", "Amazon"],
   authors: [{ name: "Quinton Miller" }],
   creator: "Quinton Miller",
   openGraph: {
@@ -19,21 +19,21 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://quinton.dev",
     siteName: "Quinton Miller",
-    title: "Quinton Miller - Front-End Engineer",
-    description: "Personal website and blog of Quinton Miller, Front-End Engineer at Amazon",
+    title: "Quinton Miller - Full-Stack Engineer",
+    description: "Personal website and blog of Quinton Miller, Full-Stack Engineer at Amazon",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Quinton Miller - Front-End Engineer",
+        alt: "Quinton Miller - Full-Stack Engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Quinton Miller - Front-End Engineer",
-    description: "Personal website and blog of Quinton Miller, Front-End Engineer at Amazon",
+    title: "Quinton Miller - Full-Stack Engineer",
+    description: "Personal website and blog of Quinton Miller, Full-Stack Engineer at Amazon",
     images: ["/og-image.jpg"],
   },
   robots: {
