@@ -49,16 +49,95 @@
   color: var(--color-accent);
 }
 
+/* Hamburger — hidden on desktop, shown on mobile */
+.menuButton {
+  display: none;
+  width: 44px;
+  height: 44px;
+  margin-right: calc(-1 * var(--space-sm));
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--color-text-primary);
+}
+
+.menuIcon,
+.menuIcon::before,
+.menuIcon::after {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.menuIcon {
+  position: relative;
+}
+
+.menuIcon::before,
+.menuIcon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.menuIcon::before {
+  top: -7px;
+}
+
+.menuIcon::after {
+  top: 7px;
+}
+
+/* Animate to an X when open */
+.menuIconOpen {
+  background: transparent;
+}
+
+.menuIconOpen::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.menuIconOpen::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
 @media (max-width: 640px) {
   .container {
     padding: var(--space-md) var(--space-lg);
   }
 
+  .menuButton {
+    display: inline-flex;
+  }
+
+  /* Collapse the nav into a dropdown panel below the header */
   .nav {
-    gap: var(--space-md);
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-sm) var(--space-lg) var(--space-md);
+  }
+
+  .nav.navOpen {
+    display: flex;
   }
 
   .navLink {
-    font-size: var(--text-sm);
+    font-size: var(--text-base);
+    padding: var(--space-sm) 0;
   }
 }

@@ -1,9 +1,9 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import styles from './Header.module.css';
 import Link from 'next/link';
-import { ViewTransition } from 'react';
 
 const navigation = [
   { name: 'About', href: '/' },
@@ -15,15 +15,36 @@ const navigation = [
 
 export default function Header() {
   const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const closeMenu = () => setMenuOpen(false);
+
+  // Close the mobile menu whenever the route changes.
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
 
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <Link href="/" className={styles.logo}>
+        <Link href="/" className={styles.logo} onClick={closeMenu}>
           Quinton Miller
         </Link>
 
-        <nav className={styles.nav}>
+        <button
+          type="button"
+          className={styles.menuButton}
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={menuOpen}
+          aria-controls="primary-nav"
+          onClick={() => setMenuOpen((open) => !open)}
+        >
+          <span className={`${styles.menuIcon} ${menuOpen ? styles.menuIconOpen : ''}`} />
+        </button>
+
+        <nav
+          id="primary-nav"
+          className={`${styles.nav} ${menuOpen ? styles.navOpen : ''}`}
+        >
           {navigation.map((item) => {
             if (item.isFile) {
               return (
@@ -33,6 +54,7 @@ export default function Header() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.navLink}
+                  onClick={closeMenu}
                 >
                   {item.name}
                 </a>
@@ -47,6 +69,7 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 className={`${styles.navLink} ${isActive ? styles.active : ''}`}
+                onClick={closeMenu}
               >
                 {item.name}
               </Link>
