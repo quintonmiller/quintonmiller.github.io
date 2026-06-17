@@ -10,6 +10,7 @@ const navigation = [
   { name: 'Work', href: '/work' },
   { name: 'Blog', href: '/blog' },
   { name: 'Contact', href: '/contact' },
+  { name: 'Résumé', href: '/Quinton-Miller-Resume.pdf', isFile: true },
 ];
 
 export default function Header() {
@@ -24,6 +25,20 @@ export default function Header() {
 
         <nav className={styles.nav}>
           {navigation.map((item) => {
+            if (item.isFile) {
+              return (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.navLink}
+                >
+                  {item.name}
+                </a>
+              );
+            }
+
             const isActive = pathname === item.href ||
               (item.href !== '/' && pathname?.startsWith(item.href));
 

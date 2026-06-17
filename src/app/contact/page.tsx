@@ -24,6 +24,18 @@ export default function ContactPage() {
         </div>
 
         <div className={styles.card}>
+          <h3>Résumé</h3>
+          <a
+            href="/Quinton-Miller-Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.link}
+          >
+            Download PDF
+          </a>
+        </div>
+
+        <div className={styles.card}>
           <h3>Socials</h3>
           <div className={styles.socials}>
             <a
