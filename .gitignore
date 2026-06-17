@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# generated resume (built by scripts/build-resume.mjs)
+/public/Quinton-Miller-Resume.pdf

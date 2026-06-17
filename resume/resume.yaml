@@ -1,0 +1,140 @@
+# Resume data — edit this file and the PDF regenerates on the next deploy.
+
+basics:
+  name: Quinton Miller
+  label: Full-Stack Engineer
+  email: quintonmiller1993@gmail.com
+  website: quinton.dev
+  profiles:
+    - label: GitHub
+      display: github.com/quintonmiller
+      url: https://github.com/quintonmiller
+    - label: LinkedIn
+      display: linkedin.com/in/quinton-miller
+      url: https://www.linkedin.com/in/quinton-miller
+
+summary: >-
+  Product-focused full-stack engineer with a decade of experience shipping
+  large-scale web applications and AI tooling, currently building advertiser
+  products for Amazon Brand Stores. Strongest in React, TypeScript, product
+  engineering, component architecture, and agentic AI experiences that help
+  users complete complex workflows through natural language. Tech lead and
+  mentor who works across the stack, from tier-1 services handling tens of
+  thousands of requests per second to user-facing AI products designed, built,
+  and shipped from early proof of concept to production.
+
+work:
+  - company: Amazon
+    position: Front-End Engineer II, Brand Stores (Amazon Advertising)
+    start: "2019"
+    end: Present
+    highlights:
+      - Build advertiser-facing tools and AI features for Brand Stores, the
+        self-service storefront builder used by 1M+ advertisers to reach
+        300M+ shoppers worldwide.
+      - Designed the AI Builder Assistant, an agentic system and conversational
+        UI that helps advertisers understand recommendations from their data
+        and create or update Store pages and widgets using natural language.
+      - Launched 25+ features end-to-end with React, TypeScript, Java, and
+        AWS, including AI-powered experiences validated through A/B
+        experiments at scale.
+      - Tech lead on cross-team initiatives of up to 25 engineers, driving
+        technical direction through design docs adopted by the team and
+        roadmap planning with product.
+      - Own and operate tier-1 services handling tens of thousands of
+        requests per second; improved availability, cut operational load, and
+        authored postmortems for major incidents.
+      - Mentor 5+ engineers, interview candidates, and led the team
+        day-to-day through an extended manager absence; recognized with a
+        promotion, top performance rating, and an internal hackathon win.
+
+  - company: Shelter Insurance
+    position: Software Developer I → III
+    start: "2016"
+    end: "2019"
+    highlights:
+      - Promoted twice in three years building customer-facing web
+        applications serving tens of thousands of users, with a heavy focus
+        on web performance, SEO, and accessibility (Angular, PHP, AWS).
+      - Created and led a design system of shared styles and web components
+        adopted by three teams, cutting duplication and the time to spin up
+        new pages.
+      - Raised Lighthouse performance scores by 40–60 points by designing a
+        custom server-side rendering solution.
+      - Drove AngularJS → Angular migrations across multiple applications and
+        built the team's A/B testing infrastructure.
+
+projects:
+  - name: ProposeFlow
+    url: https://proposeflow.ai
+    description: >-
+      AI proposal-generation service designed, built, and shipped solo. Treats
+      LLM output as proposals requiring human approval before reaching the
+      database. Users describe what they need in natural language, then
+      approve, edit, or reject the structured result.
+    technologies: [Next.js, TypeScript, Fastify, PostgreSQL, AWS]
+
+  - name: Tailored AI
+    url: https://quinton.dev/tailored-ai/
+    description: >-
+      Modular AI agent framework designed around replaceable components for
+      tools, agents, model providers, memory, communication channels, and UI.
+      Supports both cloud and local models, with core pieces configurable
+      without rewriting the system.
+    technologies: [TypeScript, Node.js, React, SQLite, Ollama]
+
+skills:
+  - category: Languages
+    items: [TypeScript, JavaScript, Java, Python, PHP, SQL, HTML, CSS]
+  - category: Front End
+    items:
+      [
+        React,
+        Next.js,
+        Angular,
+        React Native,
+        Redux,
+        Storybook,
+        Design systems,
+        Advanced CSS,
+      ]
+  - category: AI Systems
+    items:
+      [
+        Agent architectures,
+        Tool use / MCP,
+        Human-in-the-loop,
+        Agentic UI,
+        RAG,
+        Evals,
+        Claude,
+        Bedrock,
+        Ollama,
+      ]
+  - category: Back End & Cloud
+    items:
+      [
+        Node.js,
+        Java services,
+        Serverless,
+        "AWS (Lambda, DynamoDB, S3, SQS, CDK)",
+        PostgreSQL,
+        Redis,
+      ]
+  - category: Quality & Ops
+    items:
+      [
+        Jest,
+        Cypress,
+        CI/CD,
+        Canary deploys,
+        Incident response,
+        Accessibility,
+        Web performance,
+        A/B testing,
+      ]
+
+education:
+  - institution: University of Missouri — Columbia
+    degree: B.S. Computer Science, Minor in Mathematics
+    date: May 2017
