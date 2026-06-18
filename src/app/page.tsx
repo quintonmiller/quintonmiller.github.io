@@ -34,11 +34,13 @@ export default function Home() {
         <div className={styles.nowItems}>
           <div className={styles.nowItem}>
             <span className={styles.pulse} />
-            Crafting advertiser tools & AI features at <Link href="/work/amazon-brand-stores">Amazon Brand Stores</Link>
+            <span className={styles.nowText}>
+              Crafting advertiser tools & AI features at <Link href="/work/amazon-brand-stores">Amazon Brand Stores</Link>
+            </span>
           </div>
           <div className={styles.nowItem}>
             <span className={styles.pulse} />
-            Designing AI-native products &amp; intelligent systems
+            <span className={styles.nowText}>Designing AI-native products &amp; intelligent systems</span>
           </div>
         </div>
       </section>

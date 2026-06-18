@@ -115,6 +115,12 @@
   color: var(--color-text-primary);
 }
 
+/* Keep the label + link as one inline text run (not separate flex items)
+   so it wraps as normal text. min-width: 0 lets it shrink to wrap. */
+.nowText {
+  min-width: 0;
+}
+
 .pulse {
   width: 8px;
   height: 8px;
@@ -358,6 +364,24 @@
 
   .blogGrid {
     grid-template-columns: 1fr;
+  }
+
+  /* Left-align the "Currently" items so wrapped lines read as a clean
+     bullet list instead of centered text with a floating dot. */
+  .now {
+    text-align: left;
+  }
+
+  .nowItems {
+    align-items: stretch;
+  }
+
+  .nowItem {
+    align-items: flex-start;
+  }
+
+  .pulse {
+    margin-top: 0.5em;
   }
 }
 
