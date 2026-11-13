@@ -1,7 +1,9 @@
 // Resume layout — data lives in resume.yaml.
 // Build with `npm run resume:build` (outputs public/Quinton-Miller-Resume.pdf).
+// A tailored variant can swap the data file: `npm run resume:build -- <variant>`
+// reads resume/local/<variant>/resume.yaml (git-ignored).
 
-#let data = yaml("resume.yaml")
+#let data = yaml(sys.inputs.at("data", default: "resume.yaml"))
 
 #let accent = rgb("#C2710C") // matches --color-accent on quinton.dev
 #let ink = rgb("#1A1A1A")
@@ -22,7 +24,7 @@
     below: 9pt,
     stack(
       spacing: 5pt,
-      text(size: 8.5pt, weight: "bold", fill: accent, tracking: 1.4pt, upper(title)),
+      text(size: 9pt, weight: "bold", fill: accent, upper(title)),
       line(length: 100%, stroke: 0.6pt + accent.lighten(55%)),
     ),
   )

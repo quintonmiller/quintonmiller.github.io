@@ -9,7 +9,7 @@
 
 ### Current Position
 - **Company**: Amazon.com
-- **Title**: Front-End Engineer II
+- **Title**: Senior Front-End Engineer
 - **General Role**: Software Engineer, Full-Stack Developer
 - **Location**: Seattle, WA
 - **Start Date**: [PLACEHOLDER]

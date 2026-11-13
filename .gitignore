@@ -42,3 +42,6 @@ next-env.d.ts
 
 # generated resume (built by scripts/build-resume.mjs)
 /public/Quinton-Miller-Resume.pdf
+
+# tailored resume variants (private, built with `npm run resume:build -- <variant>`)
+/resume/local/

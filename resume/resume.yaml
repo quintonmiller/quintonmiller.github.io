@@ -25,28 +25,31 @@ summary: >-
 
 work:
   - company: Amazon
-    position: Front-End Engineer II, Brand Stores (Amazon Advertising)
+    position: Senior Front-End Engineer, Brand Stores (Amazon Advertising)
     start: "2019"
     end: Present
     highlights:
       - Build advertiser-facing tools and AI features for Brand Stores, the
         self-service storefront builder used by 1M+ advertisers to reach
         300M+ shoppers worldwide.
-      - Designed the AI Builder Assistant, an agentic system and conversational
-        UI that helps advertisers understand recommendations from their data
-        and create or update Store pages and widgets using natural language.
+      - Designed the AI Builder Assistant, a multi-agent system and
+        conversational UI on Amazon Bedrock AgentCore that helps advertisers
+        understand recommendations from their data and create or update Store
+        pages and widgets using natural language; launched worldwide and
+        evaluated in the release pipeline by an LLM judge against a golden set.
       - Launched 25+ features end-to-end with React, TypeScript, Java, and
         AWS, including AI-powered experiences validated through A/B
         experiments at scale.
-      - Tech lead on cross-team initiatives of up to 25 engineers, driving
-        technical direction through design docs adopted by the team and
-        roadmap planning with product.
+      - Tech lead for three years on a Brand Stores team of about 10
+        engineers, driving technical direction through design docs adopted by
+        the team and roadmap planning with product.
       - Own and operate tier-1 services handling tens of thousands of
         requests per second; improved availability, cut operational load, and
         authored postmortems for major incidents.
       - Mentor 5+ engineers, interview candidates, and led the team
-        day-to-day through an extended manager absence; recognized with a
-        promotion, top performance rating, and an internal hackathon win.
+        day-to-day through an extended manager absence. Promoted to Senior
+        Front-End Engineer in 2026, with a top performance rating and an
+        internal hackathon win.
 
   - company: Shelter Insurance
     position: Software Developer I → III
@@ -57,8 +60,7 @@ work:
         applications serving tens of thousands of users, with a heavy focus
         on web performance, SEO, and accessibility (Angular, PHP, AWS).
       - Created and led a design system of shared styles and web components
-        adopted by three teams, cutting duplication and the time to spin up
-        new pages.
+        adopted by three teams, cutting duplication.
       - Raised Lighthouse performance scores by 40–60 points by designing a
         custom server-side rendering solution.
       - Drove AngularJS → Angular migrations across multiple applications and
@@ -101,14 +103,14 @@ skills:
   - category: AI Systems
     items:
       [
-        Agent architectures,
+        Multi-agent orchestration,
+        Bedrock AgentCore,
         Tool use / MCP,
+        LLM-as-judge evals,
+        RAG / vector search,
         Human-in-the-loop,
         Agentic UI,
-        RAG,
-        Evals,
         Claude,
-        Bedrock,
         Ollama,
       ]
   - category: Back End & Cloud
@@ -116,8 +118,7 @@ skills:
       [
         Node.js,
         Java services,
-        Serverless,
-        "AWS (Lambda, DynamoDB, S3, SQS, CDK)",
+        "AWS (Lambda, DynamoDB, S3, SQS, CloudWatch, CDK)",
         PostgreSQL,
         Redis,
       ]
