@@ -40,16 +40,16 @@ work:
       - Launched 25+ features end-to-end with React, TypeScript, Java, and
         AWS, including AI-powered experiences validated through A/B
         experiments at scale.
-      - Lead a Brand Stores team of approximately 10 engineers as tech lead
-        for the past three years, driving technical direction through
+      - Served as tech lead for a Brand Stores team of approximately 10
+        engineers over the past three years, driving technical direction through
         design documents and roadmap planning with product partners.
       - Own and operate tier-1 services handling tens of thousands of
         requests per second; improved availability, cut operational load, and
         authored postmortems for major incidents.
-      - Mentor 5+ engineers and interview candidates; led the team's
-        day-to-day operations during an extended manager absence. Promoted
-        to Senior Front-End Engineer in 2026. Earned a top performance
-        rating and won an internal hackathon.
+      - Mentor 5+ engineers and conduct technical interviews; led daily team
+        operations during an extended manager absence.
+      - Promoted to Senior Front-End Engineer in 2026; earned a top
+        performance rating and won an internal hackathon.
 
   - company: Shelter Insurance
     position: Software Developer I → III
@@ -61,7 +61,7 @@ work:
         on web performance, SEO, and accessibility (Angular, PHP, AWS).
       - Created and led development of a design system of shared styles and
         web components adopted by three teams.
-      - Raised Lighthouse performance scores by 40–60 points by designing a
+      - Raised Lighthouse performance scores 40–60 points by designing a
         custom server-side rendering solution.
       - Drove AngularJS → Angular migrations across multiple applications and
         built the team's A/B testing infrastructure.
