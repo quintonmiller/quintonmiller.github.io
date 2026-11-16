@@ -21,7 +21,7 @@ summary: >-
   users complete complex workflows through natural language. Tech lead and
   mentor who works across the stack, from tier-1 services handling tens of
   thousands of requests per second to user-facing AI products designed, built,
-  and shipped from early proof of concept to production.
+  and shipped from early proof of concept through production.
 
 work:
   - company: Amazon
@@ -35,32 +35,32 @@ work:
       - Designed the AI Builder Assistant, a multi-agent system and
         conversational UI on Amazon Bedrock AgentCore that helps advertisers
         understand recommendations from their data and create or update Store
-        pages and widgets using natural language; launched worldwide and
-        evaluated in the release pipeline by an LLM judge against a golden set.
+        pages and widgets using natural language; launched globally, with
+        automated LLM-as-a-judge evaluations gating each deployment.
       - Launched 25+ features end-to-end with React, TypeScript, Java, and
         AWS, including AI-powered experiences validated through A/B
         experiments at scale.
-      - Tech lead for three years on a Brand Stores team of about 10
-        engineers, driving technical direction through design docs adopted by
-        the team and roadmap planning with product.
+      - Lead a Brand Stores team of approximately 10 engineers as tech lead
+        for the past three years, driving technical direction through
+        design documents and roadmap planning with product partners.
       - Own and operate tier-1 services handling tens of thousands of
         requests per second; improved availability, cut operational load, and
         authored postmortems for major incidents.
-      - Mentor 5+ engineers, interview candidates, and led the team
-        day-to-day through an extended manager absence. Promoted to Senior
-        Front-End Engineer in 2026, with a top performance rating and an
-        internal hackathon win.
+      - Mentor 5+ engineers and interview candidates; led the team's
+        day-to-day operations during an extended manager absence. Promoted
+        to Senior Front-End Engineer in 2026. Earned a top performance
+        rating and won an internal hackathon.
 
   - company: Shelter Insurance
     position: Software Developer I → III
     start: "2016"
     end: "2019"
     highlights:
-      - Promoted twice in three years building customer-facing web
+      - Earned two promotions in three years while building customer-facing web
         applications serving tens of thousands of users, with a heavy focus
         on web performance, SEO, and accessibility (Angular, PHP, AWS).
-      - Created and led a design system of shared styles and web components
-        adopted by three teams, cutting duplication.
+      - Created and led development of a design system of shared styles and
+        web components adopted by three teams.
       - Raised Lighthouse performance scores by 40–60 points by designing a
         custom server-side rendering solution.
       - Drove AngularJS → Angular migrations across multiple applications and
@@ -70,7 +70,7 @@ projects:
   - name: ProposeFlow
     url: https://proposeflow.ai
     description: >-
-      AI proposal-generation service designed, built, and shipped solo. Treats
+      Independently designed, built, and launched an AI service that treats
       LLM output as proposals requiring human approval before reaching the
       database. Users describe what they need in natural language, then
       approve, edit, or reject the structured result.
@@ -88,7 +88,7 @@ projects:
 skills:
   - category: Languages
     items: [TypeScript, JavaScript, Java, Python, PHP, SQL, HTML, CSS]
-  - category: Front End
+  - category: Frontend
     items:
       [
         React,
@@ -98,6 +98,7 @@ skills:
         Redux,
         Storybook,
         Design systems,
+        Accessibility,
         Advanced CSS,
       ]
   - category: AI Systems
@@ -105,19 +106,19 @@ skills:
       [
         Multi-agent orchestration,
         Bedrock AgentCore,
-        Tool use / MCP,
-        LLM-as-judge evals,
-        RAG / vector search,
-        Human-in-the-loop,
+        Tool use and MCP,
+        LLM-as-a-judge evaluations,
+        RAG and vector search,
+        Human-in-the-loop systems,
         Agentic UI,
         Claude,
         Ollama,
       ]
-  - category: Back End & Cloud
+  - category: Backend & Cloud
     items:
       [
         Node.js,
-        Java services,
+        Java-based services,
         "AWS (Lambda, DynamoDB, S3, SQS, CloudWatch, CDK)",
         PostgreSQL,
         Redis,
@@ -128,9 +129,8 @@ skills:
         Jest,
         Cypress,
         CI/CD,
-        Canary deploys,
+        Canary deployments,
         Incident response,
-        Accessibility,
         Web performance,
         A/B testing,
       ]
